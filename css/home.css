@@ -1,0 +1,315 @@
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  position:relative;
+  overflow-x:hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;;
+}
+
+h1 {
+  font-size: 7.2rem;
+  margin-bottom: 3rem;
+  font-family: 'Archivo Black', sans-serif;
+  color: #fff;
+}
+
+h5 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #DCDCDC;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #DCDCDC;
+}
+
+
+/* ! header */
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 9.6rem;
+  min-height: 10vh;
+}
+
+/* ! header logo */
+
+.header__logo {
+  width: 16rem;
+  height: auto;
+  margin-right: 6.4rem;
+}
+
+/* ! header menu */
+
+.header__menu {
+  position: relative;
+  display: flex;
+  gap: 3.2rem;
+  margin-left: auto;
+  list-style: none;
+  min-width: 40%;
+}
+
+.header__menu li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 1.6rem;
+}
+
+.header__menu li a {
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.header__menu li a:hover {
+  color: #00FFB2;
+}
+
+/* ! current page marker */
+
+.current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #00FFB2;
+  border-radius: 9pt;
+}
+
+/* ! burger menu */
+
+.burger__menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger__menu * {
+  width: 3.5rem;
+  height: 0.35rem;
+  margin: 0.3rem 0;
+  border-radius: 9pt;
+  background-color: #333;
+}
+
+.burger__menu *:nth-child(3) {
+  width: 2.3rem;
+  background: #00FFB2;
+}
+
+/* ! wrapper */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+/* ! wrapper background-img */
+
+.wrapper {
+  background-image: url(..//img/5_s31-35_f0290.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ! side */
+
+.side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.article {
+  width:50%;
+  height: auto;
+}
+
+.article p a {
+  text-decoration: none;
+  color: #00FFB2;
+}
+
+/* ! footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  min-height: 10vh;
+}
+
+.footer p {
+  color: #030303;
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* ! media screen 1200px */
+
+@media screen and (max-width: 1200px) {
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* ! media screen 900px */
+
+@media screen and (max-width: 900px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 90vh;
+    top: 10vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    gap: 2rem;
+    z-index: 10;
+  }
+
+  .header__menu li{
+    opacity: 0;
+    margin-bottom: 10vh;
+  }
+
+  .burger__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menu-active {
+    transform: translatex(0%);
+  }
+
+/* ! navLinkFade */
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* ! toggle */
+
+  .toggle .line-1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  .toggle .line-2{
+    transform: rotate(45deg) translate(0px, 0px);
+
+  }
+  .toggle .line-3{
+    opacity: 0;
+  }
+
+  .side {
+    width: 100%;
+    height: auto;
+  }
+
+  .article {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/* ! mobile // orientation landscape */
+
+@media only screen and (max-device-width: 900px) and (max-device-height: 600px) and (orientation : landscape) {
+
+  html {
+    font-size: 37.5%;
+  }
+
+  .header__menu {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 6em;
+    top: 10vh;
+  }
+
+  .header__logo {
+    width: 14rem;
+  }
+
+  .header__menu li {
+    margin-bottom: 20vh;
+  }
+
+  .side {
+    width: 90%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  .article {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* ! mobile // orientation portait */
+
+@media only screen and (max-device-width: 414px) and (max-device-height: 900px) and (orientation : portrait) {
+
+  html {
+    font-size: 37.5%;
+  }
+}
