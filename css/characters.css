@@ -121,6 +121,7 @@ p {
   width: 100%;
   height: 80vh;
   padding: 5%;
+  overflow-y: auto;
 }
 
 /* ! card */
@@ -259,9 +260,11 @@ p {
   }
 
   .header__menu {
+    position: fixed;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    top: 10vh;
     background: #fff;
     display: flex;
     flex-direction: column;
