@@ -230,7 +230,7 @@ p {
 /* ! slider menu */
 
   .header__menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 100%;
     height: 90vh;
