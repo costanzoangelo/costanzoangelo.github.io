@@ -359,6 +359,7 @@ p {
   .box {
     width: 50%;
     height: 100%;
+    padding: 0;
   }
 
   .box video {
