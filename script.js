@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {//appena la pagina si 
   /* ! current page marker */
 
   const elems = Array.from( document.querySelectorAll( '.link') );//crea la lista di tutti gli elementi (li) con classe .link
-    console.log(window.location.href);
     elems.forEach( element => {//ciclo su tutti gli elementi del menu
 
 
