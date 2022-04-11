@@ -27,12 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {//appena la pagina si 
   /* ! current page marker */
 
   const elems = Array.from( document.querySelectorAll( '.link') );//crea la lista di tutti gli elementi (li) con classe .link
-
+    console.log(window.location.href);
     elems.forEach( element => {//ciclo su tutti gli elementi del menu
 
-    //console.log(element.href + ' - ' + window.location.href);//visualizza in console i valori dell'href dell'ancora e l'url corrente
+
     var a = element.getElementsByTagName('a')[0];
-    // console.log(element.getElementsByTagName('a'));
     if(a.href === window.location.href)// se l'url corrente è uguale alla voce del menu allora aggiungo la classe .corrente
      element.classList.add('current');
    });
