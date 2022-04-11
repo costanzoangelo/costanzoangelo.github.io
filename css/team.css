@@ -47,6 +47,7 @@ p {
 .header__logo {
   width: 16rem;
   height: auto;
+  padding: 1rem;
   margin-right: 6.4rem;
 }
 
