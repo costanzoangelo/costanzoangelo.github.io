@@ -160,7 +160,7 @@ p {
   align-items: center;
   width: 50%;
   height: 100%;
-  padding: 10%;
+  padding: 0 5%;
 }
 
 .side__article {
@@ -353,10 +353,6 @@ p {
   .side {
     width: 50%;
     height:  100%;
-  }
-
-  .side__article {
-    padding: 5%;
   }
 
   .box {
