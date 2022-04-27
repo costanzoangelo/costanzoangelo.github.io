@@ -401,6 +401,16 @@ p {
     flex-direction: row;
   }
 
+  .l {
+    top: 60%;
+    left: 2rem;
+  }
+
+  .r {
+    top: 60%;
+    right: 2rem;
+  }
+
   .side {
     width: 50%;
     height: 100%;
