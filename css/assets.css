@@ -136,10 +136,28 @@ p {
 .wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80vh;
-  overflow-y: auto;
+}
+
+/* ! arrows */
+
+.arrow {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 20;
+}
+
+.l {
+  left: 4rem;
+}
+
+.r {
+  right: 4rem;
 }
 
 /* ! side */
@@ -275,7 +293,7 @@ p {
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     gap: 2rem;
-    z-index: 10;
+    z-index: 100;
   }
 
   .header__menu li{
@@ -329,6 +347,16 @@ p {
     flex-wrap: nowrap;
     width: 100%;
     height: 80vh;
+  }
+
+  .l {
+    top: 30%;
+    left: 2rem;
+  }
+
+  .r {
+    top: 30%;
+    right: 2rem;
   }
 
   .left model-viewer {
