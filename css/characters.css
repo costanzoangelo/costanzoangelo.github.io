@@ -188,6 +188,7 @@ p {
 
 .box {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -219,6 +220,7 @@ p {
 .info  p {
   font-size: 1.3rem;
   margin: 0;
+  color: #333333;
 }
 
 /* ! footer */
