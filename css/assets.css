@@ -37,7 +37,8 @@ p {
 /* ! header */
 
 .header {
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
   background-color: #FFFFFF;
   z-index: 100;
@@ -120,7 +121,7 @@ p {
 
 .breadcrumbs {
   display: block;
-  position: fixed;
+  position: absolute;
   z-index: 110;
   width: 100%;
   height: auto;
