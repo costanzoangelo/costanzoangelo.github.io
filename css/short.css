@@ -20,6 +20,7 @@ h1 {
   font-size: 4rem;
   font-family: 'Archivo Black', sans-serif;
   margin-bottom: 1rem;
+  color: #333333;
 }
 
 h3 {
@@ -37,6 +38,7 @@ h5 {
 p {
   font-size: 2rem;
   margin-bottom: 5rem;
+  color: #333333;
 }
 
 
