@@ -107,8 +107,8 @@ p {
 }
 
 .burger__menu * {
-  width: 3.5rem;
-  height: 0.3rem;
+  width: 4rem;
+  height: 0.4rem;
   margin: .7rem 0;
   border-radius: 4pt;
   background-color: #333;
@@ -312,16 +312,16 @@ p {
   /* ! toggle */
 
   .toggle .line-1{
-    transform: translateY(.99rem) rotate(45deg);
+    transform: translateY(1.1rem) rotate(45deg);
   }
   .toggle .line-2{
     width: 0;
     opacity: 0;
   }
   .toggle .line-3{
-    width: 3.5rem;
+    width: 4rem;
     background-color: #333333;
-    transform: translateY(-.99rem) rotate(-45deg);
+    transform: translateY(-1.1rem) rotate(-45deg);
   }
 
   .wrapper {
