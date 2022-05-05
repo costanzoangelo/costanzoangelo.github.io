@@ -147,7 +147,7 @@ p {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -193,7 +193,7 @@ p {
 .left model-viewer {
   width: 90%;
   height: 90%;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .rigth {
@@ -420,7 +420,7 @@ p {
 
   .wrapper {
     width: 100%;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .breadcrumbs {
