@@ -193,6 +193,7 @@ p {
 .left model-viewer {
   width: 90%;
   height: 90%;
+  align-self: flex-end;
 }
 
 .rigth {
