@@ -155,6 +155,7 @@ p {
   height: 80vh;
   margin-top: 10vh;
   overflow-y: auto;
+  position: relative;
 }
 
 /* ! arrows */
